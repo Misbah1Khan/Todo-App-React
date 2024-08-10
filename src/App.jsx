@@ -22,12 +22,12 @@ function App() {
   };
 
   const deleteTask = (id) => {
-    // Filter out the task with the given id
+    
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
   const toggleTaskCompletion = (id) => {
-    // Find the task with the given id and update its completed status
+ 
     setTasks(
       tasks.map((task) =>
         task.id === id ? { ...task, completed: !task.completed } : task
