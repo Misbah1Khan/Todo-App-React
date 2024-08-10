@@ -8,7 +8,7 @@ const TaskForm = ({ addTask }) => {
     e.preventDefault();
     if (taskName.trim()) {
       addTask({ name: taskName });
-      setTaskName(""); // Clear the input after adding the task
+      setTaskName("");
     }
   };
 
